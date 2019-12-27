@@ -1,0 +1,28 @@
+{
+    "name": "nu-mbed-aliyun-iot-csdk",
+    "config": {
+        "mbedtls-mfl-code": {
+            "help": "Code of maximum fragment length for the payload in one packet, not including TLS header and encryption overhead. Is needed for constrainted devices having low MTU sizes. Value 0 = disabled, 1 = MBEDTLS_SSL_MAX_FRAG_LEN_512, 2= MBEDTLS_SSL_MAX_FRAG_LEN_1024, 3 = MBEDTLS_SSL_MAX_FRAG_LEN_2048, 4 = MBEDTLS_SSL_MAX_FRAG_LEN_4096",
+            "options": [0, 1, 2, 3, 4],
+            "value": 0,
+            "macro_name": "CONFIG_MBEDTLS_MFL_CODE"
+        },
+        "mbedtls-debug-level": {
+            "help": "mbedtls debug level",
+            "options": [0, 1, 2, 3, 4],
+            "value": 0,
+            "macro_name": "CONFIG_MBEDTLS_DEBUG_LEVEL"
+        },
+        "nghttp2-receive-buffer-length": {
+            "help": "Receive buffer length in bytes in nghttp2 library",
+            "value": 2048,
+            "macro_name": "HTTP2_RECV_BUFFER_LENGHT"
+        }
+    },
+    "macros": [
+    ],
+    "target_overrides": {
+        "*": {
+        }
+    }
+}
